@@ -12,6 +12,52 @@ body {
   color: whitesmoke;
 }
 
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: grid;
+  place-items: center;
+
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 450ms ease, visibility 0s linear 450ms;
+}
+
+#loading-screen img {
+  display: block;
+  max-width: min(70vw, 320px);
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+html.js-enabled:not(.loader-ready),
+html.js-enabled:not(.loader-ready) body {
+  overflow: hidden;
+}
+
+html.js-enabled:not(.loader-ready) #loading-screen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: none;
+}
+
+html.js-enabled.loader-ready #loading-screen {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #loading-screen {
+    transition-duration: 0.01ms;
+  }
+}
+
 .container {
   width: 100%;
 

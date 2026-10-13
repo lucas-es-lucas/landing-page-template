@@ -3,101 +3,225 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <script>
+      document.documentElement.classList.add("js-enabled");
+    </script>
     <title>Document</title>
   </head>
   <body>
-    <main>
+    <div id="loading-screen" role="status" aria-label="Cargando sitio">
+      <img src="/imgs/loader/Loader-Logo.gif" alt="" />
+    </div>
+    <main id="site-content">
       <div class="container">
-        <section class="titulo__principal">
-          <h1>TITULO PRINCIPAL</h1>
-        </section>
-        <section class="cards">
-          <article class="card">
-            <figure class="card__container__imagen">
+        <section class="hero">
+          <section class="hero__bg">
+            <video
+              class="video-bg"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="none"
+            ></video>
+          </section>
+          <section class="titulo__principal">
+            <h1>TITULO PRINCIPAL</h1>
+          </section>
+          <section class="cards">
+            <article class="card">
+              <figure class="card__container__imagen">
+                <img
+                  class="card__imagen"
+                  src="/imgs/cards/desktop/card-dancers.png"
+                  alt="card imagen"
+                />
+              </figure>
               <img
-                class="card__imagen"
-                src="/images/cards/WhatsApp Image 2023-04-18 at 16.54.40.jpeg"
-                alt="card imagen"
+                class="card__icono"
+                src="/images/iconos/ajuar.svg"
+                alt="card icono"
               />
-            </figure>
-            <img
-              class="card__icono"
-              src="/images/iconos/ajuar.svg"
-              alt="card icono"
-            />
-            <h2>TITULO CARD</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
-              cumque ullam, dolore commodi accusantium inventore blanditiis quas
-              quasi maxime fugit sit architecto officiis.
-            </p>
-          </article>
-          <article class="card">
-            <figure class="card__container__imagen">
+              <h2>TITULO CARD</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
+                cumque ullam, dolore commodi accusantium inventore blanditiis
+                quas quasi maxime fugit sit architecto officiis.
+              </p>
+            </article>
+            <article class="card">
+              <figure class="card__container__imagen">
+                <img
+                  class="card__imagen"
+                  src="/imgs/cards/desktop/card-lanzaremeras.jpg"
+                  alt="card imagen"
+                />
+              </figure>
               <img
-                class="card__imagen"
-                src="/images/cards/WhatsApp Image 2023-06-02 at 13.46.42.jpeg"
-                alt="card imagen"
+                class="card__icono"
+                src="/images/iconos/mochilas1.svg"
+                alt="card icono"
               />
-            </figure>
-            <img
-              class="card__icono"
-              src="/images/iconos/mochilas1.svg"
-              alt="card icono"
-            />
-            <h2>TITULO CARD</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
-              cumque ullam, dolore commodi accusantium inventore blanditiis quas
-              quasi maxime fugit sit architecto officiis.
-            </p>
-          </article>
-          <article class="card">
-            <figure class="card__container__imagen">
+              <h2>TITULO CARD</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
+                cumque ullam, dolore commodi accusantium inventore blanditiis
+                quas quasi maxime fugit sit architecto officiis.
+              </p>
+            </article>
+            <article class="card">
+              <figure class="card__container__imagen">
+                <img
+                  class="card__imagen"
+                  src="/imgs/cards/desktop/card-churros.png"
+                  alt="card imagen"
+                />
+              </figure>
               <img
-                class="card__imagen"
-                src="/images/cards/WhatsApp Image 2023-07-17 at 12.39.17.jpeg"
-                alt="card imagen"
+                class="card__icono"
+                src="/images/iconos/optica.svg"
+                alt="card icono"
               />
-            </figure>
-            <img
-              class="card__icono"
-              src="/images/iconos/optica.svg"
-              alt="card icono"
-            />
-            <h2>TITULO CARD</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
-              cumque ullam, dolore commodi accusantium inventore blanditiis quas
-              quasi maxime fugit sit architecto officiis.
-            </p>
-          </article>
-          <article class="card">
-            <figure class="card__container__imagen">
+              <h2>TITULO CARD</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
+                cumque ullam, dolore commodi accusantium inventore blanditiis
+                quas quasi maxime fugit sit architecto officiis.
+              </p>
+            </article>
+            <article class="card">
+              <figure class="card__container__imagen">
+                <img
+                  class="card__imagen"
+                  src="/imgs/cards/desktop/card-angeles.png"
+                  alt="card imagen"
+                />
+              </figure>
               <img
-                class="card__imagen"
-                src="/images/cards/WhatsApp Image 2023-11-15 at 16.54.37.jpeg"
-                alt="card imagen"
+                class="card__icono"
+                src="/images/iconos/protesis.svg"
+                alt="card icono"
               />
-            </figure>
-            <img
-              class="card__icono"
-              src="/images/iconos/protesis.svg"
-              alt="card icono"
-            />
-            <h2>TITULO CARD</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
-              cumque ullam, dolore commodi accusantium inventore blanditiis quas
-              quasi maxime fugit sit architecto officiis.
-            </p>
-          </article>
+              <h2>TITULO CARD</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatum ad nesciunt ut aperiam repudiandae temporibus natus
+                cumque ullam, dolore commodi accusantium inventore blanditiis
+                quas quasi maxime fugit sit architecto officiis.
+              </p>
+            </article>
+          </section>
         </section>
       </div>
     </main>
+    <script>
+      (() => {
+        const minimumLoaderTime = new Promise((resolve) => {
+          window.setTimeout(resolve, 3000);
+        });
+        const root = document.documentElement;
+        const loader = document.getElementById("loading-screen");
+        const logo = loader && loader.querySelector("img");
+        const main = document.getElementById("site-content");
+        const video = document.querySelector(".video-bg");
+
+        if (!loader || !logo || !main || !video) {
+          console.error("No se pudo iniciar el loader: faltan elementos requeridos.");
+          root.classList.add("loader-ready");
+          return;
+        }
+
+        main.inert = true;
+        main.setAttribute("aria-hidden", "true");
+
+        let isReady = false;
+        const showSite = () => {
+          if (isReady) return;
+          isReady = true;
+          main.inert = false;
+          main.removeAttribute("aria-hidden");
+          loader.setAttribute("aria-hidden", "true");
+          root.classList.add("loader-ready");
+        };
+
+        const logoReady = new Promise((resolve) => {
+          const onLoad = () => resolve(true);
+          const onError = () => resolve(false);
+
+          if (logo.complete) {
+            resolve(logo.naturalWidth > 0);
+            return;
+          }
+
+          logo.addEventListener("load", onLoad, { once: true });
+          logo.addEventListener("error", onError, { once: true });
+        });
+
+        const viewportWidth = window.innerWidth;
+        const videoName =
+          viewportWidth <= 480
+            ? "bg-tickets-320-vertical"
+            : viewportWidth <= 768
+              ? "bg-tickets-768"
+              : "bg-tickets";
+        const candidates = [
+          { src: `/imgs/video/${videoName}.webm`, type: "video/webm" },
+          { src: `/imgs/video/${videoName}.mp4`, type: "video/mp4" },
+        ];
+        const playableCandidates = candidates.filter(
+          ({ type }) => video.canPlayType(type) !== "",
+        );
+        const videoCandidates = playableCandidates.length
+          ? playableCandidates
+          : candidates;
+        const videoReady = new Promise((resolve) => {
+          let failedSources = 0;
+
+          video.addEventListener("loadeddata", () => resolve(true), {
+            once: true,
+          });
+          video.addEventListener("error", () => resolve(false), {
+            once: true,
+          });
+
+          video.replaceChildren(
+            ...videoCandidates.map(({ src, type }) => {
+              const source = document.createElement("source");
+              source.src = src;
+              source.type = type;
+              source.addEventListener(
+                "error",
+                () => {
+                  failedSources += 1;
+                  if (failedSources === videoCandidates.length) resolve(false);
+                },
+                { once: true },
+              );
+              return source;
+            }),
+          );
+          video.load();
+        });
+
+        logoReady.then((loaded) => {
+          if (!loaded) {
+            console.error("No se pudo cargar el loader:", logo.currentSrc || logo.src);
+          }
+        });
+        videoReady.then((loaded) => {
+          if (!loaded) {
+            console.error(
+              "No se pudo cargar el video del Hero:",
+              videoCandidates.map(({ src }) => src),
+            );
+          }
+        });
+
+        Promise.all([logoReady, videoReady, minimumLoaderTime]).then(showSite);
+      })();
+    </script>
   </body>
 </html>
